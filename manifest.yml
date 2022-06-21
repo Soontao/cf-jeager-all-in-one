@@ -1,0 +1,10 @@
+---
+applications:
+  - name: jaeger-all-in-one
+    command: ./jaeger-all-in-one --collector.otlp.enabled=true --memory.max-traces=50000 --query.http-server.host-port=:$PORT 
+    random-route: true
+    memory: 512MB
+    disk_quota: 512MB
+    buildpacks: 
+      - binary_buildpack
+
