@@ -10,7 +10,7 @@ cf push
 ```
 
 
-## multi port 
+## Setup OTLP collector port
 
 ```bash
 DOMAIN= # set your cloud foundry domain, use 'cf domains' to check that
